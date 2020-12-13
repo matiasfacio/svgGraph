@@ -1,6 +1,6 @@
 export const drawCircle = (totalCases, nummerObject) => {
   const canvas = document.getElementById("canvas");
-  canvas.width = window.innerWidth;
+  canvas.width = window.innerWidth-100;
   canvas.height = 180;
   const c = canvas.getContext("2d");
   const arrayNumbers = Object.entries(nummerObject);
