@@ -185,4 +185,8 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
+
+#canvas {
+  background-color: #e5f7fd;
+}
 /*# sourceMappingURL=style.css.map */

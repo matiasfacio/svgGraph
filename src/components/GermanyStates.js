@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState, useMemo } from "react";
 import { DataContext } from "../contexts/DataContext";
 import ChartPie from "./ChartPie";
+import ChartPieCanvas from './ChartPieCanvas'
 
 const orderingData = (data) => {
   let orderData = [];
@@ -67,6 +68,7 @@ const GermanyStates = () => {
       {valueOfHeight.length !== 0 ? (
         <div className="main-container">
           <div className="divChartRect">
+          <ChartPieCanvas totalCases = {totalCases} nummer = {simplifyingData.Berlin}/>
             <h2>Bar Chart</h2>
             <div>
               <svg height="600" width="500" id="rectangle">
@@ -118,6 +120,7 @@ const GermanyStates = () => {
             </div>
           </div>
           {Object.keys(simplifyingData).length > 0 ? <ChartPie /> : ""}
+
         </div>
       ) : (
         ""
