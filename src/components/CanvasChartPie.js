@@ -43,56 +43,6 @@ export const drawCircle = (totalCases, nummerObject) => {
   }
 };
 
-// export const drawCircle = (totalCases, nummer) => {
-
-//     const canvas = document.getElementById('canvas')
-//     canvas.width = 200;
-//     canvas.height= 200;
-//     const c = canvas.getContext('2d')
-//     const percentage = 100 * nummer / totalCases; // 5,92%
-//     const radianes = percentage * 6.28 / 100;  // 0.3717 radianes
-
-//     c.beginPath()
-//     c.arc(100, 100, 80, 0, 2 * Math.PI, true)
-//     c.fillStyle = "black";
-//     c.fill()
-//     c.beginPath();
-//     c.lineTo(100, 100); // c.lineTo(180, 100)
-//     c.stroke()
-//     c.arc(100, 100, 80, 0, radianes, true)
-//     c.fillStyle = "red";
-//     c.strokeStyle = "red";
-//     c.fill()
-// }
-
-// export const drawCircleAll = (totalCases, dataArray) => {
-
-//     // initizalize canvas
-//     const colors = ['yellow', 'gray', 'brown', 'lightblue', 'orange', 'pink']
-//     const canvas2 = document.getElementById('canvas2')
-//     canvas2.width = window.innerWidth;
-//     canvas2.height= window.innerHeight;
-//     const c2 = canvas2.getContext('2d')
-
-//     let radianesTotal = 0;
-//     let percentage = 0;
-//     let radianes = 0;
-
-//     for (let i = 0; i< dataArray.length; i ++) {
-//         percentage = 100 * dataArray[i] / totalCases;
-//         radianes = percentage * 6.28 / 100;
-//         c2.beginPath()
-//         c2.moveTo(100,100)
-//         c2.arc(100, 100, 80, radianesTotal, radianesTotal + radianes, false)
-//         c2.fillStyle = colors[i];
-//         c2.fill()
-//         c2.beginPath();
-//         c2.lineTo(100, 100); // c.lineTo(180, 100)
-//         c2.stroke()
-//         radianesTotal += radianes;
-//     }
-// }
-
 export const drawCircleAll = (totalCases, dataObject) => {
   // initizalize canvas
   const colors = [
