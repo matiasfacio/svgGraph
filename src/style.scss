@@ -1,0 +1,148 @@
+$primaryColor: #0074d9;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 1em 2em;
+}
+
+svg circle {
+  // fill: rgb(255, 0, 0);
+  // stroke: $primaryColor;
+  // stroke-width: 5;
+  // stroke-dasharray: 314 0;  // 314 todo el circulo primero dashes segundo space
+  transition: stroke-dasharray 0.8s ease;
+  stroke-linecap: round;
+}
+
+h1 {
+  padding: 10px;
+  border: 1px black double;
+
+}
+
+#mainTitle {
+  
+  transition: all 1s ease-out;
+}
+
+ 
+
+.title {
+  border: 3px black double;
+  padding: 10px;
+  display: inline-block;
+}
+
+#loading {
+  font-size: 4rem;
+  font-weight: 500;
+  color: blue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+.text-pie {
+  fill: white;
+  transform: translate(67px, 110px);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+svg#rectangle {
+  background: transparent;
+  display: block;
+  transform: rotate(270deg) scale(0.8);
+  border-top: 1px rgb(0, 4, 255) solid;
+  border-left: 1px black solid;
+}
+
+.text {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.oneRect {
+  fill: rgb(0, 102, 255);
+  transition: all 1s ease-in-out;
+  &:hover {
+    fill: orange;
+  }
+}
+
+.container-bundes-circular-chart {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  
+}
+.divChart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 70%;
+  border-radius: 10px;
+  border: 1px rgb(53, 53, 53) solid;
+  padding: 10px;
+}
+
+.divChartRect {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  display: inline-block;
+  height: 20px;
+  font-size: 0.6rem;
+}
+
+.oneBundesland {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.displayList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.main {
+  width: 100%;
+  h2 {
+    text-align: center;
+  }
+}
+
+.main-container {
+  display: flex;
+}
+
+.main-container-chart {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container-chart-pie {
+  display: flex;
+}

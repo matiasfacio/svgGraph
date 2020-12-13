@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 1em 2em;
+}
+
+svg circle {
+  -webkit-transition: stroke-dasharray 0.8s ease;
+  transition: stroke-dasharray 0.8s ease;
+  stroke-linecap: round;
+}
+
+h1 {
+  padding: 10px;
+  border: 1px black double;
+}
+
+#mainTitle {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.title {
+  border: 3px black double;
+  padding: 10px;
+  display: inline-block;
+}
+
+#loading {
+  font-size: 4rem;
+  font-weight: 500;
+  color: blue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.text-pie {
+  fill: white;
+  -webkit-transform: translate(67px, 110px);
+          transform: translate(67px, 110px);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+svg#rectangle {
+  background: transparent;
+  display: block;
+  -webkit-transform: rotate(270deg) scale(0.8);
+          transform: rotate(270deg) scale(0.8);
+  border-top: 1px #0004ff solid;
+  border-left: 1px black solid;
+}
+
+.text {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.oneRect {
+  fill: #0066ff;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.oneRect:hover {
+  fill: orange;
+}
+
+.container-bundes-circular-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 50px;
+}
+
+.divChart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 70%;
+  border-radius: 10px;
+  border: 1px #353535 solid;
+  padding: 10px;
+}
+
+.divChartRect {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  display: inline-block;
+  height: 20px;
+  font-size: 0.6rem;
+}
+
+.oneBundesland {
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.displayList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.main {
+  width: 100%;
+}
+
+.main h2 {
+  text-align: center;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container-chart {
+  margin-top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container-chart-pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
