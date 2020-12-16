@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { drawCircle, drawCircleAll } from "./CanvasChartPie";
 import { DataContext } from "../contexts/DataContext";
-import { addElement } from "./Canvases";
 
 const CanvasChartPie = (props) => {
   const { simplifyingData, isLoading } = useContext(DataContext);

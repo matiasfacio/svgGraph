@@ -32,7 +32,7 @@ const ChartPies = (props) => {
 
   useEffect(() => {
     setArrayData(Object.entries(simplifyingData));
-  }, []);
+  }, [simplifyingData]);
 
   useEffect(()=> {
     drawDynamicCircles2(simplifyingData, props.totalCases)
@@ -51,7 +51,7 @@ const ChartPies = (props) => {
         ""
       ) : (
         <div id="container16">
-          {
+          { 
             arrayData.length > 0
             ? arrayData.map((bundes, index) => {
             return (
