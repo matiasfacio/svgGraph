@@ -145,3 +145,28 @@ button {
 #canvas {
   background-color: rgb(229, 247, 253);
 }
+
+.divCircles {
+  display: inline-block;
+}
+
+#container16 {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.oneCanvaContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+
+section#mainContainer {
+  display: flex;
+}

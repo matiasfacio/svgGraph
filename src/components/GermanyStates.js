@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState, useMemo } from "react";
 import { DataContext } from "../contexts/DataContext";
 import ChartPie from "./ChartPie";
 import ChartPieCanvas from './ChartPieCanvas'
+import ChartPies from "./ChartPies";
 
 const orderingData = (data) => {
   let orderData = [];
@@ -64,7 +65,6 @@ const GermanyStates = () => {
       </div>
 
       {isLoading ? <div id="loading">Loading...</div> : ""}
-
       {valueOfHeight.length !== 0 ? (
         <div className="main-container">
           <div className="divChartRect">
@@ -125,7 +125,10 @@ const GermanyStates = () => {
       ) : (
         ""
       )}
-    </div>
+      {Object.keys(simplifyingData).length > 0
+      ? <ChartPies totalCases = {totalCases}/>  
+      : ''}
+      </div>
   );
 };
 
