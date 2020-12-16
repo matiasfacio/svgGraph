@@ -46,7 +46,7 @@ const ChartPies = (props) => {
 
   return (
     <div>
-      <h2>Chart Pies</h2>
+      <h2>Canvas made Chart Pies</h2>
       {isLoading ? (
         ""
       ) : (

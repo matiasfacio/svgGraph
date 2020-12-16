@@ -25,7 +25,7 @@ const ChartPie = () => {
 
   return (
     <div className="main">
-      <h2>Chart Pie</h2>
+      <h2>Chart Pie SVG</h2>
 
       <div className="main-container-chart">
         <div className="container-bundes-circular-chart">
