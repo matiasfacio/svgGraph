@@ -69,7 +69,7 @@ const GermanyStates = () => {
         <div className="main-container">
           <div className="divChartRect">
           <ChartPieCanvas totalCases = {totalCases} nummer = {simplifyingData.Berlin}/>
-            <h2>Bar Chart</h2>
+            <h2>Bar Chart SVG</h2>
             <div>
               <svg height="600" width="500" id="rectangle">
                 {orderData.length === 0 && valueOfHeight.length === 0
